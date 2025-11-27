@@ -1,0 +1,6 @@
+The ADHD-200 Athena preprocessed data:
+http://www.nitrc.org/plugins/mwiki/index.php/neurobureau:AthenaPipeline
+
+ADHD200_CC400_TCs_filtfix
+
+В ADHD200_CC400_TCs_filtfix - resting state fMRI and voxel based morphometry preprocessing (grey matter) using AFNI and FSL. Now contains the test dataset.

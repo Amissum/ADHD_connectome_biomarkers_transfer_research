@@ -1,0 +1,15 @@
+Этап,Метод / данные,Инструменты и артефакты,Статус
+Отбор данных,ADHD200; когорты 12–15 и 16–21; унификация ID; контроль утечки (splits по participant_id),"Фенотипы (CSV), фильтры по возрасту, групповые сплиты по participant_id",Сделано
+Подготовка сигналов,ROI-тайм-серии Athena; окна фикс. длины T_FIX; mask паддинга; TR из BIDS,".npy/.tsv.gz (T×R), *_mask.npy, *_bold.json",Сделано
+Базовые признаки,Статическая FC из окна (Fisher-z верхний треугольник),Внутренняя функция расчёта FC; baseline,Сделано
+Ковариаты,Age / Gender / Site (предобработка и добавление в модель),ColumnTransformer: StandardScaler + OneHotEncoder (fit на train),Сделано
+Модели (последоват.),"LSTM, GRU на (T, R) с поддержкой mask (зануление/pack)","PyTorch DataLoader (B, T, R)",Сделано
+Основная модель,ROISequenceNet: Conv1d по времени per-ROI + Self-Attention по ROI + классификация,"PyTorch; вход (T, R); mask учитывается",Сделано
+Бейзлайн (классика),LogisticRegression на статической FC,scikit-learn,Сделано
+Валидация и метрики,StratifiedGroupKFold / GroupShuffleSplit по participant_id; Accuracy/Precision/F1/AUC,sklearn.metrics; логирование результатов,Сделано (нестабильность из-за объёма)
+Гармонизация по сайту,Коррекция межсайтовых сдвигов (ComBat),neuroComBat/аналог,План
+Motion-QC,FD/DVARS как ковариаты/фильтр; скраббинг,Конфаунды из fMRIPrep/Athena,План
+dFC-признаки,Окна → FC-векторы → k-means состояния → occupancy/transition/dwell,DFC_CSV + MLP/ROISequenceNet,План
+Последовательность окон,TCN/Transformer «по окнам» (моделирование переходов состояний),PyTorch (вторая ось времени: окно→окно),План
+Интерпретация,"Пермутационные важности, Integrated Gradients, карты внимания",Captum/собственные процедуры,План
+Воспроизводимость,"2 ноутбука: (1) подготовка/QC, (2) обучение/оценка; фиксация seed/версий",Версионирование манифеста/парцелляций/конфигов,Сделано

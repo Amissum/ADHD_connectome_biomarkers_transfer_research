@@ -1,4 +1,13 @@
+# Common data
+
 /ADHD200/RawDataBIDS/**
 !/ADHD200/RawDataBIDS/info.txt
 /ADHD200/SortedRawDataBIDS/**
 !/ADHD200/SortedRawDataBIDS/info.txt
+
+# Athena pipeline
+/ADHD200/Pipelines/AthenaPipeline/ADHD200_CC400_TCs_filtfix/**
+!/ADHD200/Pipelines/AthenaPipeline/ADHD200_CC400_TCs_filtfix/info.txt
+/ADHD200/Pipelines/AthenaPipeline/Athena_flat/**
+/ADHD200/Pipelines/AthenaPipeline/Athena_flat_filtered/**
+/ADHD200/Pipelines/AthenaPipeline/Athena_prepared_filtered/**
