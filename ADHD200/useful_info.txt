@@ -3,7 +3,7 @@ https://fcon_1000.projects.nitrc.org/indi/adhd200/
 
 RawDataBIDS - 87.9 GB
 
-В RawDataBIDS содержатся все данные, доступные в рамках датасета ADHD200 в BIDS формате.
+In RawDataBIDS there is data accessible within ADHD200 dataset in BIDS format.
 
 FreeSurfer license:
 
@@ -12,3 +12,6 @@ tatsiana.kublashvili@gmail.com
  *COaEJ6dlu.iI
  FSXvmyByH7BUg
  exmksslm1eCpFH8E6lefpTBWVSY4g9SSf1Yj77EI828PUZXKnQ1A5qNrf3Yasi1S
+
+In order to reproduce the research:
+- download RawDataBIDS folder from https://fcon_1000.projects.nitrc.org/indi/adhd200/ portal (after proper registration) to the current folder.

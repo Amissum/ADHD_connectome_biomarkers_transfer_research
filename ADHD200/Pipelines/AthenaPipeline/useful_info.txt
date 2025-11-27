@@ -1,0 +1,24 @@
+The ADHD-200 Athena preprocessed data:
+http://www.nitrc.org/plugins/mwiki/index.php/neurobureau:AthenaPipeline
+
+ADHD200_CC400_TCs_filtfix
+
+Within ADHD200_CC400_TCs_filtfix - resting state fMRI and voxel based morphometry preprocessing (grey matter) using AFNI and FSL. Now contains the test dataset.
+
+Extracted Time Courses
+Time courses were extracted from filtered and unfiltered preprocessed resting state data using the automated anatomical labeling (AAL) [7], Eickhoff-Zilles (EZ) [8], Talairach and Tournoux (TT) [9], and Harvard-Oxford (HO) anatomical atlases, as well as, 200 (CC200) and 400 (CC400) ROI atlases derived from functionally parcellating the resting state data [10].
+
+Extracted time courses can be downloaded from here or:
+
+AAL Time Courses (http://www.nitrc.org/frs/downloadlink.php/3419)
+EZ Time Courses (http://www.nitrc.org/frs/downloadlink.php/3420)
+HO Time Courses (http://www.nitrc.org/frs/downloadlink.php/3421)
+TT Time Courses (http://www.nitrc.org/frs/downloadlink.php/3422)
+CC200 Time Courses (http://www.nitrc.org/frs/downloadlink.php/3423)
+CC400 Time Courses (http://www.nitrc.org/frs/downloadlink.php/3424) - this segmentation variant has been used in research for Athena-based pipeline.
+
+Archive files include phenotypic information for each site, atlases used to extract time courses, and time course text files for filtered and unfiltered preprocessed data from subject, scan, and dataset.
+
+In order to reproduce current part of the research:
+- download ADHD200_CC400_TCs_filtfix.tar.gz from http://www.nitrc.org/frs/downloadlink.php/3424
+- unzip ADHD200_CC400_TCs_filtfix folder into current directory to correspond existing paths.
