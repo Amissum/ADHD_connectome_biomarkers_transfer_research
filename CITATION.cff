@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "ADHD Connectome (rs-fMRI)"
+authors:
+  - family-names: Kublashvili
+    given-names: Tatsiana
+date-released: "2025-01-01"
+version: "0.1.0"
+license: "Apache-2.0"
+repository-code: "https://github.com/your-org/your-repo"
+keywords:
+  - ADHD
+  - fMRI
+  - resting-state
+  - functional connectivity
+  - deep learning
