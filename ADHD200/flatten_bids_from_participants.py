@@ -196,7 +196,8 @@ def main():
         site_candidates = [s for s in sites_list if s] or [str(site_val).strip()]
 
         site_code = slug(site_candidates[0]) if site_candidates else slug(str(site_val))
-        new_label = f"{site_code}{re.sub(r'[^0-9a-zA-Z]+','',scan_id)}".lower()
+        # new_label = f"{site_code}{re.sub(r'[^0-9a-zA-Z]+','',scan_id)}".lower()
+        new_label = f"{scan_id}".lower() # just use scan ID as is for new label
 
         # Discover subject paths; include original as-is plus zero-padded variants up to length of original
         subj_paths = discover_subject_paths(src_root, site_candidates, scan_id)
@@ -239,7 +240,7 @@ def main():
                 if not f.name.lower().endswith(('.nii','.nii.gz','.json','.tsv','.tsv.gz')):
                     continue
                 rel_parent = f.relative_to(src_sub).parent  # keeps session folder if present
-                new_name = re.sub(r'sub-[0-9A-Za-z_]+', f'sub-{new_label}', f.name)
+                new_name = re.sub(r'sub-[0-9]+', f'sub-{new_label}', f.name)
                 dst_path = dst_sub / rel_parent / new_name
 
                 if args.dry_run:

@@ -11,3 +11,8 @@
 /ADHD200/Pipelines/AthenaPipeline/Athena_flat/**
 /ADHD200/Pipelines/AthenaPipeline/Athena_flat_filtered/**
 /ADHD200/Pipelines/AthenaPipeline/Athena_prepared_filtered/**
+
+# fMRIPrep pipeline
+/ADHD200/Pipelines/fMRIPrepPipeline/fMRIPrepData/**
+!/ADHD200/Pipelines/fMRIPrepPipeline/fMRIPrepData/cohort_adult_participants/participants.txt
+!/ADHD200/Pipelines/fMRIPrepPipeline/fMRIPrepData/cohort_teen_participants/participants.txt
