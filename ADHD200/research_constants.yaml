@@ -1,0 +1,22 @@
+AGE_COHORTS:
+  CHILDREN_MINIMAL_AGE: 0
+  CHILDREN_MAXIMAL_AGE: 11.99
+  TEEN_MINIMAL_AGE: 12
+  TEEN_MAXIMAL_AGE: 15.99
+  ADULT_MINIMAL_AGE: 16
+  ADULT_MAXIMAL_AGE: 21.99
+
+DIAGNOSIS_KEYS:
+  0: Typically Developing Children
+  1: ADHD-Combined
+  2: ADHD-Hyperactive/Impulsive
+  3: ADHD-Inattentive
+
+GENDER_CODES:
+  0: F
+  1: M
+
+# Путь к корневой директории с исходными данными. В этой директории должны быть папки с данными субъектов, разделённые по источникам (например, 'Peking_1', 'Brown' и т.д.)
+SOURCE_ROOT: "/Users/alexey.stafeev/Documents/!Documents/Магистратура_МФТИ/Предметы/НИР/Materials/ADHD200/RawDataBIDS"
+# Путь к предобработанным данным с фильтрацией и фиксацией движений (пайплайн Athena CC400 TCs filtfix)
+ATHENA_SOURCE_ROOT: "/Users/alexey.stafeev/Documents/!Documents/Магистратура_МФТИ/Предметы/НИР/Materials/ADHD200/ADHD200_CC400_TCs_filtfix"
