@@ -285,7 +285,7 @@ def main():
 
         parts.append({'participant_id': f'sub-{new_label}',
                       'age': age_val if pd.notna(age_val) else 'n/a',
-                      'sex': sex_to_bids(sex_val),
+                      'gender': sex_to_bids(sex_val),
                       'diagnosis': diagnosis_val if pd.notna(diagnosis_val) else 'n/a',
                       'site': site_candidates[0] if site_candidates else str(site_val),
                       'orig_site': site_val,
