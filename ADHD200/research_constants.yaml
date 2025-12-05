@@ -6,6 +6,16 @@ AGE_COHORTS:
   ADULT_MINIMAL_AGE: 16
   ADULT_MAXIMAL_AGE: 21.99
 
+AGE_COHORT_NAMES:
+  - "children"
+  - "teen"
+  - "adult"
+
+AGE_COHORTS_KEYS:
+  children: 0
+  teen: 1
+  adult: 2
+
 DIAGNOSIS_KEYS:
   0: Typically Developing Children
   1: ADHD-Combined
@@ -31,8 +41,8 @@ SITE_CODES_REVERSED_MAP:
   NeuroIMAGE: 4
   NYU: 5
   OHSU: 6
-  Pitt: 7
-  WUSTL: 8
+  Pittsburgh: 7
+  WashU: 8
 
 GENDER_CODES:
   0: F
@@ -43,6 +53,13 @@ DATA_SOURCES:
   SOURCE_ROOT: "/Users/alexey.stafeev/Documents/!Documents/Магистратура_МФТИ/Предметы/НИР/Materials/ADHD200/RawDataBIDS"
   # Путь к предобработанным данным с фильтрацией и фиксацией движений (пайплайн Athena CC400 TCs filtfix)
   ATHENA_SOURCE_ROOT: "/Users/alexey.stafeev/MyDocuments/Study/МФТИ/НИР/Materials/ADHD200/ADHD200_CC400_TCs_filtfix"
+
+# Подготовка временных рядов
+TIME_SERIES:
+  T_FIX: 200  # Фиксированная длина временного ряда после выравнивания (окна/паддинг)
+  WINDOW_SIZE: 30  # Размер окна для dFC
+  WINDOW_STEP: 5   # Шаг окна для dFC
+  FC_METRIC: 'correlation'  # Метрика для расчёта FC в окне (Возможные значения: 'correlation', 'covariance', 'precision', 'tangent)
 
 # Универсальное значение для инициализации генераторов случайных чисел
 RANDOM_SEED: 42
