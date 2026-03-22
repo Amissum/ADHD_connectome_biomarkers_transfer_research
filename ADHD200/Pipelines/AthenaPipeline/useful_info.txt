@@ -1,3 +1,5 @@
+Current work GitHub link: https://github.com/Amissum/ADHD_connectome_biomarkers_transfer_research
+
 The ADHD-200 Athena preprocessed data:
 http://www.nitrc.org/plugins/mwiki/index.php/neurobureau:AthenaPipeline
 

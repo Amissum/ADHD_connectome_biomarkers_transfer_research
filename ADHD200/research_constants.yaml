@@ -79,9 +79,9 @@ EXPERIMENTS_DATA:
 
   Phase_3_experiments_names: [
     "Teen+Adult(0.8) cov gender",
-    "Teen+Adult(0.8) cov gender and site_original",
+    # "Teen+Adult(0.8) cov gender and site_original",
     "Teen+Adult(0.2) cov gender",
-    "Teen+Adult(0.2) cov gender and site_original",
+    # "Teen+Adult(0.2) cov gender and site_original",
     "Teen-Only cov gender",
     "Children+Teen+Adult(0.8) cov gender"
   ]
