@@ -63,3 +63,25 @@ TIME_SERIES:
 
 # Универсальное значение для инициализации генераторов случайных чисел
 RANDOM_SEED: 42
+
+# Подготовка данных (для 3-х фаз эксперимента)
+EXPERIMENTS_DATA:
+  Phase_1_experiments_names: [
+    "Adult Rest",
+    "Teen-Only"
+  ]
+
+  Phase_2_experiments_names: [
+    "Teen+Adult(0.8)",
+    "Teen+Adult(0.2)",
+    "Children+Teen+Adult(0.8)"
+  ]
+
+  Phase_3_experiments_names: [
+    "Teen+Adult(0.8) cov gender",
+    "Teen+Adult(0.8) cov gender and site_original",
+    "Teen+Adult(0.2) cov gender",
+    "Teen+Adult(0.2) cov gender and site_original",
+    "Teen-Only cov gender",
+    "Children+Teen+Adult(0.8) cov gender"
+  ]
